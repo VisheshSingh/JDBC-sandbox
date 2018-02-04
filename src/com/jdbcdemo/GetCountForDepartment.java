@@ -16,7 +16,7 @@ public class GetCountForDepartment {
 			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hb_student_tracker", "hbstudent",
 					"hbstudent");
 
-			String theDepartment = "H";
+			String theDepartment = "HR";
 
 			// Prepare the stored procedure call
 			myStmt = myConn.prepareCall("{call get_count_for_department(?,?)}");
